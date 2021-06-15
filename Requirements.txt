@@ -1,0 +1,14 @@
+The following file shows the concept for creating a QR code - October 30, 2020
+1. The beginning of the file is "Senstek"
+2. There is a dash
+3. The model number follows by two letter codes.
+    i.  Current Model is "st7000"
+    ii. Current code is "aa"
+4. There is a dash
+5. The seriel number follows.
+    i.  There are nine digits.
+    ii.  The numbers are zero filled.
+6. Once generatored, these numbers will be unique
+7. Using size 1
+
+A current number is:     Senstek-st7000aa-000000104
