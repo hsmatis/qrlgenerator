@@ -5,19 +5,19 @@
 import pyqrcode
 import xlsxwriter
 #
-total_codes = 5                                        # Number of lables to create
+total_codes = 50                                        # Number of lables to create
 model = '{"SensTek_S":{"mn":"ST7000","sn":'    # Official Part Number
 assembly_location = 100000000                          # Modify this when the assembly location is changed.
                                                        # Make sure that you do not change the number of digits
                                                        # as the we are the limit of characters for the QR code
-url = pyqrcode.create('http://www.senstk.com')
+# url = pyqrcode.create('http://www.senstk.com')
 # url.svg('website.svg', scale=8)
 # url.eps('website.eps', scale=2)
-url.png('website.png', scale=4)
+# url.png('website.png', scale=4)
 #
-url.svg('uca.svg', scale=4)
-number = pyqrcode.create(123456789012345)
-number.png('SensTek.png')
+# url.svg('uca.svg', scale=4)
+# number = pyqrcode.create(123456789012345)
+# number.png('SensTek.png')
 #
 file_a = open('last_qr_code.txt', 'r')
 line = file_a.readline()
