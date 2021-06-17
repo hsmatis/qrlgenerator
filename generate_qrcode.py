@@ -1,15 +1,17 @@
 #
 #  This program creates labels for the SensTek sensor - Howard Matis
-#  Version June 13, 2021
+#  For producing labels for QR codes
+#  Version June 5, 2021
+#
 #
 import pyqrcode
 import xlsxwriter
 #
-total_codes = 50                                        # Number of lables to create
+total_codes = 51                               # Number of labels to create with 23' tape
 model = '{"SensTek_S":{"mn":"ST7000","sn":'    # Official Part Number
-assembly_location = 100000000                          # Modify this when the assembly location is changed.
-                                                       # Make sure that you do not change the number of digits
-                                                       # as the we are the limit of characters for the QR code
+assembly_location = 100000000                  # Modify this when the assembly location is changed.
+                                               # Make sure that you do not change the number of digits
+                                               # as the we are the limit of characters for the QR code
 # url = pyqrcode.create('http://www.senstk.com')
 # url.svg('website.svg', scale=8)
 # url.eps('website.eps', scale=2)
